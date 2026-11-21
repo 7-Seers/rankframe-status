@@ -1,31 +1,31 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# RankFrame status page (Upptime). Checks run every 5 minutes on GitHub Actions.
+owner: 7-Seers
+repo: rankframe-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website
+    url: https://rankframe.com
+  - name: Dashboard
+    url: https://dashboard.rankframe.com/login
+  - name: API
+    url: https://rankframe-backend-244590638432.europe-west1.run.app/api/health
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.rankframe.com
+  logoUrl: https://raw.githubusercontent.com/7-Seers/rankframe-status/master/assets/rankframe.svg
+  favicon: https://raw.githubusercontent.com/7-Seers/rankframe-status/master/assets/rankframe.svg
+  name: RankFrame Status
+  introTitle: "RankFrame status"
+  introMessage: Live status of the RankFrame website, dashboard and API, checked every 5 minutes.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: RankFrame
+      href: https://rankframe.com
+    - title: Support
+      href: https://rankframe.com/support
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  up: Working
+  down: Down
+  degraded: Slow
