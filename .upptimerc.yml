@@ -1,0 +1,31 @@
+# RankFrame status page (Upptime). Checks run every 5 minutes on GitHub Actions.
+owner: 7-Seers
+repo: rankframe-status
+
+sites:
+  - name: Website
+    url: https://rankframe.com
+  - name: Dashboard
+    url: https://dashboard.rankframe.com/login
+  - name: API
+    url: https://rankframe-backend-244590638432.europe-west1.run.app/api/health
+
+status-website:
+  cname: status.rankframe.com
+  logoUrl: https://raw.githubusercontent.com/7-Seers/rankframe-status/main/assets/rankframe.svg
+  favicon: https://raw.githubusercontent.com/7-Seers/rankframe-status/main/assets/rankframe.svg
+  name: RankFrame Status
+  introTitle: "RankFrame status"
+  introMessage: Live status of the RankFrame website, dashboard and API, checked every 5 minutes.
+  navbar:
+    - title: Status
+      href: /
+    - title: RankFrame
+      href: https://rankframe.com
+    - title: Support
+      href: https://rankframe.com/support
+
+i18n:
+  up: Working
+  down: Down
+  degraded: Slow
